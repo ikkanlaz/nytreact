@@ -24,11 +24,11 @@ mongoose.connect(
   }
 );
 
-if (process.env.PORT) {
-    mongoose.connect("mongodb://heroku_hr6f4dkz:4go012qv1p7lugedt40mqq4e0d@ds141514.mlab.com:41514/heroku_hr6f4dkz");
-} else {
-    mongoose.connect("mongodb://localhost/mongoose-news");
-}
+// if (process.env.PORT) {
+//     mongoose.connect("mongodb://heroku_hr6f4dkz:4go012qv1p7lugedt40mqq4e0d@ds141514.mlab.com:41514/heroku_hr6f4dkz");
+// } else {
+//     mongoose.connect("mongodb://localhost/nytreact");
+// }
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
